@@ -21,7 +21,7 @@ class VMConfig {
     [int] $VMCpus = 
 
     # you input Virtual Disk size. Unit is M.
-    # ex) [int] 8192
+    # ex) [int] 81920
     [int] $VDISize =  
 
     # you input iso path. ex) ~/Download/WindowsServer.iso
