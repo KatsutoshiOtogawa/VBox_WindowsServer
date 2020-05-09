@@ -1,5 +1,5 @@
-# VBox_WindowsServer
-This script job is to Install Windows Server to Virtual Box.
+# VBox_install_iso
+you install isofile into Virtual Box from terminal.
 
 ## How to use
 
