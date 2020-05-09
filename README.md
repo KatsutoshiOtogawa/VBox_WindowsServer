@@ -29,8 +29,8 @@ Linux user is reffering to below link.
 [Microsoft Docks](https://docs.microsoft.com/en-US/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7)
 
 ```
-$ git clone https://github.com/KatsutoshiOtogawa/VBox_WindowsServer.git
-$ cd VBox_WindowsServer
+$ git clone https://github.com/KatsutoshiOtogawa/VBox_install_iso.git
+$ cd VBox_install_iso
 ```
 you config config.ps1, and you execute.
 
