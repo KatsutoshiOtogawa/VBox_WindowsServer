@@ -24,8 +24,12 @@ class VMConfig {
     # ex) [int] 81920
     [int] $VDISize =  
 
-    # you input iso path. ex) ~/Download/WindowsServer.iso
+    # you input iso path.
     # ex) $isopath = "~/Download/WindowsServer.iso"
     [String] $isopath = 
+    
+    # you input ShareFolderName.
+    # ex) $VMShareName = "ShareFoler"
+    [String] $VMShareName = "ShareFolder"
 }
 
