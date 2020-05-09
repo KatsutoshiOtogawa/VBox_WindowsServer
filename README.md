@@ -35,7 +35,7 @@ $ cd VBox_WindowsServer
 you config config.ps1, and you execute.
 
 ```
-$ install.ps1
+$ ./install.ps1
 ```
 
 you want to use VM is setupping.
