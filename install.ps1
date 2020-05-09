@@ -1,19 +1,23 @@
-.config.ps1
+# you read config.
+. ./config.ps1
 
-VBoxManage createvm --name $VMName --ostype $VMOStype --register
+$config = [VMConfig]::new()
 
-VBoxManage modifyvm $VMName --memory $VMMemory
+VBoxManage createvm --name $config.VMName --ostype $config.VMOStype --register
 
-VBoxManage modifyvm $VMName --vram $VMRam
+VBoxManage modifyvm $config.VMName --memory $config.VMMemory
 
-VBoxManage modifyvm $VMName --cpus $VMCpus
+VBoxManage modifyvm $config.VMName --vram $config.VMRam
 
-VBoxManage createhd --filename ~/VirtualBox\ VMs/$VMName/$VMName.vdi --size $VDISize --format VDI
+VBoxManage modifyvm $config.VMName --cpus $config.VMCpus
 
-VBoxManage storagectl $VMName --name "SATA Controller" --add sata --controller IntelAhci
+VBoxManage createhd --filename "$($config.VMName)/$($config.VMName).vdi" --size $config.VDISize --format VDI
 
-VBoxManage storageattach $VMName --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium VirtualBox\ VMs/$VMName/$VMName.vdi
+VBoxManage storagectl $config.VMName --name "SATA Controller" --add sata --controller IntelAhci
 
-VBoxManage storagectl $VMName --name "IDE Controller" --add ide --controller PIIX4
+VBoxManage storageattach $config.VMName --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium "$($config.VMName)/$($config.VMName).vdi"
 
-VBoxManage storageattach $VMName --storagectl "IDE Controller" --port 1 --device 0 --type dvddrive --medium $isopath
+VBoxManage storagectl $config.VMName --name "IDE Controller" --add ide --controller PIIX4
+
+VBoxManage storageattach $config.VMName --storagectl "IDE Controller" --port 1 --device 0 --type dvddrive --medium $config.isopath
+
