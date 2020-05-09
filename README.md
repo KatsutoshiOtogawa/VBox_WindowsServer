@@ -9,7 +9,20 @@ In advance, you are preparing iso file.
 
 [Manjaro Linux](https://manjaro.org/)
 
+[Calculate Linux](https://www.calculate-linux.org/)
+
 [Windows Server trial version](https://www.microsoft.com/en-US/cloud-platform/windows-server-trial)
+
+if you dont use Windows os, you need to install powreshell.
+
+Mac user is need to homebrew. if you installed homebrew, you type and execute below command.
+```
+$ brew cask install powershell
+```
+
+Linux user is reffering to below link.
+
+[Microsoft Docks](https://docs.microsoft.com/en-US/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7)
 
 ```
 $ git clone https://github.com/KatsutoshiOtogawa/VBox_WindowsServer.git
