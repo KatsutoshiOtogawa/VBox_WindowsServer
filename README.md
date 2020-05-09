@@ -13,6 +13,10 @@ In advance, you are preparing iso file.
 
 [Windows Server trial version](https://www.microsoft.com/en-US/cloud-platform/windows-server-trial)
 
+If you use GUI, you need VirtualBox Guest Aditions.
+
+[Oracle Docs](https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html)
+
 if you dont use Windows os, you need to install powreshell.
 
 Mac user is need to homebrew. if you installed homebrew, you type and execute below command.
