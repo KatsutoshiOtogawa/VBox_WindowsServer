@@ -1,3 +1,4 @@
+VBoxManage createvm --name WindowsServer --ostype Windows2019_64 --register
 VBoxManage modifyvm "WindowsServer" --memory 8192
 VBoxManage modifyvm "WindowsServer" --vram 256
 VBoxManage modifyvm "WindowsServer" --cpus 4
