@@ -9,6 +9,8 @@ In advance, you are preparing iso file.
 
 [Manjaro Linux](https://manjaro.org/)
 
+[Gentoo Linux](https://www.gentoo.org/)
+
 [Calculate Linux](https://www.calculate-linux.org/)
 
 [Windows Server trial version](https://www.microsoft.com/en-US/cloud-platform/windows-server-trial)
