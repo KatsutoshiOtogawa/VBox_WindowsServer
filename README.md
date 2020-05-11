@@ -48,7 +48,21 @@ $ VBoxManage startvm you_naming_virtualmachine
 ```
 You are launching you_naming_virtualmachine!
 
+## How to use Share Folder
+
+In advance, you configged $VMShareName.
+
+If Using Guest OS is Windows,
+```
+net use x: \\vboxsvr\share
+```
+If System error occoured error 53,
+
 ## How to destroy 
 ```
 $ VBoxManage unregistervm you_naming_virtualmachine
 ```
+and, delete Virtual Machine directory.
+
+
+
