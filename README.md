@@ -56,7 +56,18 @@ If Using Guest OS is Windows,
 ```
 net use x: \\vboxsvr\share
 ```
-If System error occoured error 53,
+If System error 53 had occured,you dont install Virtualbox Guest Addition Tools yet.
+
+you click
+Menu > Deviceis > Insert Guest Guest Additions CD Image...
+
+and, Guest OS is mounting Guest Addtion.
+you execute comannd in Guest os.
+```
+$ Get-Volume
+```
+
+Drive letter is appeard on display, and Guest 
 
 ## How to destroy 
 ```
