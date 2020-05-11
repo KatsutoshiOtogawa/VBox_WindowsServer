@@ -19,7 +19,7 @@ VBoxManage storageattach $config.VMName --storagectl "SATA Controller" --port 0 
 
 VBoxManage storagectl $config.VMName --name "IDE Controller" --add ide --controller PIIX4
 
-VBoxManage storageattach $config.VMName --storagectl "IDE Controller" --port 1 --device 0 --type dvddrive --medium $config.isopath
+VBoxManage storageattach $config.VMName --storagectl "IDE Controller" --port 1 --device 0 --type dvddrive --medium (Resolve-Path $config.isopath | Select-Object -ExpandProperty Path)
 
 VBoxManage sharedfolder add $config.VMName --name $config.VMShareName --hostpath (Resolve-Path ./share | Select-Object -ExpandProperty Path)
 
