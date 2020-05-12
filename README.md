@@ -48,7 +48,15 @@ $ VBoxManage startvm you_naming_virtualmachine
 ```
 You are launching you_naming_virtualmachine!
 
-## How to use Share Folder
+## How to access Virtual Machine resource
+
+### In Advance
+
+you configged VM network,Guest OS can be accessed.
+
+
+
+### via Share Folder
 
 In advance, you configged $VMShareName.
 
@@ -68,6 +76,18 @@ $ Get-Volume
 ```
 
 Drive letter is appeard on display, and Guest 
+### via SSH
+
+If you using Guest os is windows, you need to add WindowsCapability.
+```
+$ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
+```
+
+you enabled sshd, and start service.
+```
+$ Set-Service sshd -StartupType Automatic
+$ Start-Service sshd
+```
 
 ## How to destroy 
 ```
