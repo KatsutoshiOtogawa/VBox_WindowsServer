@@ -62,7 +62,7 @@ In advance, you configged $VMShareName.
 
 If Using Guest OS is Windows,
 ```
-net use x: \\vboxsvr\share
+$ New-PSDrive -Name x -PSProvider FileSystem -Root \\vboxsvr\share -Persist
 ```
 If System error 53 had occured,you dont install Virtualbox Guest Addition Tools yet.
 
