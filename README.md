@@ -89,6 +89,21 @@ $ Set-Service sshd -StartupType Automatic
 $ Start-Service sshd
 ```
 
+## If you are concerned about network latency.
+Probably, TSO(TCP Segmantaion Offload) is working in your environment.
+### Windows
+
+```
+$ Get-NetAdapterAdvancedProperty
+```
+
+You check Larged Send Offloard V2 (IPv4) and Larged Send Offloard V2 (IPv6) are enabled,
+you execute below command.
+
+```
+$ 
+```
+
 ## How to destroy 
 ```
 $ VBoxManage unregistervm you_naming_virtualmachine
