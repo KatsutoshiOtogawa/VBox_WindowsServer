@@ -101,8 +101,10 @@ You check Larged Send Offloard V2 (IPv4) and Larged Send Offloard V2 (IPv6) are 
 you execute below command.
 
 ```
-$ 
+$ Set-NetAdapterAdvancedProperty -DisplayName "Larged Send Offloard V2 (IPv4)","Larged Send Offloard V2 (IPv6)" -DisplayValue "Disabled" -RegistryValue 0
 ```
+
+### Linux
 
 ## How to destroy 
 ```
