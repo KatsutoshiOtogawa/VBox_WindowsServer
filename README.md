@@ -106,6 +106,32 @@ $ Set-NetAdapterAdvancedProperty -DisplayName "Larged Send Offloard V2 (IPv4)","
 
 ### Linux
 
+You check is using nic.
+```
+$ ip link
+```
+nic list is appered.
+Let's say, nic name is eth0,
+configfile is deployed to /etc/sysconfig/network/ifcfg-eth0 or /etc/sysconfig/network-scripts/ifcfg-eth0.
+
+you are modifing this file!
+```
+$ vi /etc/sysconfig/network/ifcfg-eth0
+```
+
+you insert this option.
+```
+ETHTOOL_OPTS='tx off rx off tso off'
+```
+
+you restart nic.
+```
+$ ip link set eth0 down
+$ ip link set eth0 up
+```
+
+you can be config nic tso disabled!
+
 ## How to destroy 
 ```
 $ VBoxManage unregistervm you_naming_virtualmachine
